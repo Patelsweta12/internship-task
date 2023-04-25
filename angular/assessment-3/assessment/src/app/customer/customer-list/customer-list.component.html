@@ -1,0 +1,60 @@
+<section>
+    
+    <div class="align-btn-input">
+        <input type="text" class="form-control input-style" [(ngModel)]="filter" placeholder="Search here...">
+        <button type="button" class="btn btn-primary mt-2 mb-2 align-btn" (click)="toFormOpen()">Add</button>
+
+
+    </div>
+
+    <div class="overflo-auto">
+
+        <table class="table table-striped  table-hover">
+            <thead class="thead">
+
+
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Rate</th>
+                    <th>Balance</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of customerListData |search:filter ">
+                    <th>{{data.id}}</th>
+                    <td>{{data.name}}</td>
+                    <td class="text-truncat">{{data.description}}</td>
+                  
+                    <td>
+
+                        <span *ngIf="data.status=='error'" class="badges-style badge-error-color">
+                            {{data.status}}</span>
+                        <span *ngIf="data.status=='inactive'" class="badges-style badge-inactive-color">
+                            {{data.status}}</span>
+                        <span *ngIf="data.status=='success'" class="badges-style badge-success-color">
+                            {{data.status}}</span>
+                        <span *ngIf="data.status=='open'" class="badges-style badge-open-color"> {{data.status}}</span>
+                    </td>
+                    <td>{{data.rate | currency}}</td>
+                    <td>
+                        <span *ngIf="data.balance<=0" class="negative-value">{{data.balance | currency}}</span>
+                        <span *ngIf="data.balance>=0" class="positive-value">{{data.balance | currency}}</span>
+
+                    </td>
+                    <td>
+                        <a (click)="deleteCustomer(data.id)"><i class="fa fa-trash delete-icon-color mr-9"
+                                aria-hidden="true"></i></a>
+                        <a (click)="getCustomerById(data.id) "><i class="fa fa-pencil edit-icon-color"
+                                aria-hidden="true"></i></a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</section>

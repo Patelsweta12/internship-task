@@ -1,0 +1,7 @@
+<div>
+    <app-student-form *ngIf="isToggle" (closeEvent)="formClose($event)"  (postEvent)="postStudent($event)"  [obtainedEditData]="obtainedEditData"></app-student-form>
+    <button type="button" class="btn btn-success mt-2 mb-2" (click)="toFormOpen()">Add student</button>
+    <app-student-list (openEvent)="formToggle($event)" [iteratedData]="studentList" (deleteEvent)="deleteSingleStudent($event)"  (editEvent)="editSingleStudent($event)">
+        
+    </app-student-list>
+</div>

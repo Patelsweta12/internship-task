@@ -1,0 +1,35 @@
+<form [formGroup]="studentForm" (ngSubmit)="postStudentData()">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" formControlName="name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="age">Age</label>
+        <input type="number" class="form-control" id="age" placeholder="Age"  formControlName="age">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email"  formControlName="email">
+      </div>
+      
+
+    
+    </div>
+    <div>
+        <label for="technology">Choose your Technology</label>
+        <select name="technology" id="technology"  formControlName="technology">
+            <option value="front-end">Front-End</option>
+            <option value="java">Java</option>
+            <option value="devops">DevOps</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input type="text" class="form-control" id="address" placeholder="Address"  formControlName="address">
+    </div>
+   
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="button" class="btn btn-info ml-2" (click)="toCloseForm() ">cancel</button>
+  </form>

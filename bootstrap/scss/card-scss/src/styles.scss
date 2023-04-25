@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+$body-bg-color: #E5E5E5;
+$btn-color: #2D9CDB;
+$card2-bg: #EB5757;
+$font-poppin: "Poppins";
+
+:root {
+  --bs-border-radius: 4px
+}
+
+body {
+  background-color: $body-bg-color;
+}
+
+.card{
+  max-width: 1000px;
+  width: 100%;
+}
+
+.card-title {
+  color: #6E7491;
+}
+
+.card-body-text {
+  color: #7C8DB0;
+}
+
+.card-section-color {
+  color: #6D8493;
+}
+
+.btn-primary {
+  background-color: $btn-color;
+  border: 1px solid $btn-color;
+}
+
+
+.card-img-width{
+  width: 100%;
+  
+}
+@media (min-width:768px){
+  .card-img-width{
+    width: 450px;
+    
+  }
+
+}
+
+// card 2
+.card-section1-color {
+  background-color: $card2-bg;
+  color: white
+}
+
+.specialFont {
+
+  font-family: font-poppin;
+  font-size: 13px;
+
+}
+
+.text-space {
+  width: 10rem;
+}
+
+.card2-title {
+  width: 15rem;
+}
+
+.btn-info {
+  background-color: $card2-bg;
+  color: white;
+  font-size: 13px;
+}
+
+.card2-subtext-color {
+  color:
+    #90A4AE;
+}

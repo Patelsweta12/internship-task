@@ -1,0 +1,28 @@
+app-customer-form{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 30%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.opacity1{
+    opacity: 1;
+}
+.opacity05{
+    opacity: 0.5;
+}
+app-customer-list{
+    overflow: auto;
+    flex-grow: 1;
+  }
+
+  app-customer-form{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+  

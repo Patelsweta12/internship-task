@@ -1,0 +1,22 @@
+<h2>{{title}}</h2>
+<input type="text" [(ngModel)]="tableFilter">
+
+
+<table [class.tableClass]="myClass">
+  <thead>
+    <tr *ngFor="let data of headerArr">
+      <th >{{data.id}}</th>
+      <th >{{data.name}}</th>
+      <th >{{data.age}}</th>
+   </tr>
+
+
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of studentArray | searchPipe:tableFilter">
+      <td >{{data.id}}</td>
+      <td >{{data.name}}</td>
+      <td >{{data.age}}</td>
+    </tr>
+  </tbody>
+</table>

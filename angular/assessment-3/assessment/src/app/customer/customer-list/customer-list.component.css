@@ -1,0 +1,98 @@
+
+
+.delete-icon-color{
+    color: red;
+}
+.edit-icon-color{
+    color:#868FA0
+}
+.mr-9{
+    margin-right: 9px;
+}
+.tableStyle:nth-child(){
+    background-color:  #EBF0FA;;
+}
+.thead{
+    background-color:  #EBF0FA;
+    position: sticky;
+    top: 0;
+}
+.input-style{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 12px;
+gap: 8px;
+
+width: 164px;
+height: 32px;
+margin-right: 32px;
+margin-top: 10px;
+
+
+/* White */
+
+background: #FFFFFF;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(104, 113, 130, 0.16);
+border-radius: 6px;
+}
+.align-btn-input{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+   
+}
+
+.positive-value{
+    color: green;
+}
+
+.negative-value{
+    color: red;
+}
+
+  
+  app-customer-list{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    height: 100%;
+  }
+  .badges-style{
+    padding: 1px 10px;
+    border-radius: 10px;
+    background-color: #F0F1FA;
+  }
+  .badge-error-color{
+color:red;
+
+  }
+  .badge-open-color{
+    color: #4F5AED;
+  }
+  .badge-success-color{
+    color: green;
+  }
+  .badge-inactive-color{
+    color: #5A6376;
+  }
+  
+section{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+.overflo-auto{
+  overflow: auto;
+ 
+  flex-grow: 1;
+}
+.text-truncat{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100px;
+}

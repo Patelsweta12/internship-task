@@ -1,0 +1,177 @@
+// variables for map
+$black: black;
+$gray: #15181b;
+$light-gray: #778492;
+$white: white;
+$aqua: aqua;
+$font-family: "Josefin Sans", sans-serif;
+$yellow: yellow;
+$red: red;
+$purple: rgb(90, 42, 223);
+// mixin for margin start
+
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: $black;
+  font-family: $font-family;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+// color map starts
+$colors: (
+  "black": $black,
+  "gray": $gray,
+  "white": $white,
+  "aqua": $aqua,
+  "light-gray": $light-gray,
+  "yellow": $yellow,
+  "red": $red,
+  "purple": $purple,
+);
+
+// loop for map
+@each $key,
+$value in $colors {
+  .#{$key} {
+    color: $value;
+  }
+}
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+// nesting from aside-wrapper classess
+.aside-wrapper {
+     width: 200px;
+      height: 100%;
+      background-color: $gray;
+       padding: 20px;
+       .aside-header {
+         display: flex;
+         .header-space {
+           margin-left: 10px;
+           
+           }
+         }
+         .sidebar-list {
+             margin-top: 30px;
+             .list-item {
+                padding: 15px 25px;
+               }
+           }
+
+     }
+
+.list-item:hover {
+  background-color: black;
+  border-radius: 10px;
+  color: $aqua;
+}
+
+// helper class
+.d-flex {
+  display: flex;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+.overflow-auto{
+  overflow: auto;
+}
+.flex-dir{
+  flex-direction: column;
+}
+
+// main content starts
+.content-wrapper {
+  flex-grow: 1;
+  
+}
+
+// header starts
+.header {
+  color: white;
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px solid red;
+}
+
+.header-text {
+  margin-left: 10px;
+}
+
+.img-b-radius {
+  border-radius: 50%;
+}
+
+// header ends
+
+// main content cards starts
+.card1 {
+  background-color: $gray;
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.align-card-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.align-card-text {
+  text-align: center;
+  // margin-bottom: 10px;
+  @include margin(0, 0, 10px, 0)
+}
+// card-list nesting starts
+// card list classess starts
+.card-list {
+  color: $white;
+  text-decoration: none;
+
+  .list2-padding {
+    padding: 3px 3px;
+
+    .list2-item {
+      color: $white;
+
+      .icon-margin {
+        margin-right: 7px;
+      }
+    }
+  }
+
+}
+// card list classess ends
+.social-media-icon {
+  padding: 5px 5px;
+}
+
+.card-wrapper {
+  flex-wrap: wrap;
+}

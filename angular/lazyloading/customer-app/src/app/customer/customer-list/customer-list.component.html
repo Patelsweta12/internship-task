@@ -1,0 +1,5 @@
+<h2>Customer-List</h2>
+<li *ngFor="let data of customertArry">
+    <a routerLink="/customer/customer-details/{{data.id}}" routerLinkActive="active-link">{{data.name}}</a>
+
+</li>

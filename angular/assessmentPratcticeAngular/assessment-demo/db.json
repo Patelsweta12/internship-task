@@ -1,0 +1,60 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "name": "Sweta",
+      "age": "22",
+      "email": "sweta@gmail.com",
+      "technology": "frontend",
+      "address": "valsad"
+    },
+    {
+      "name": "ffsdfsdf",
+      "age": null,
+      "email": "swetapatel11114@gmail.com",
+      "technology": "java",
+      "address": "valsad",
+      "id": 2
+    },
+    {
+      "name": "ffsdfsdf",
+      "age": 22,
+      "email": "swetapatel11114@gmail.com",
+      "technology": "java",
+      "address": "valsad",
+      "id": 3
+    },
+    {
+      "name": "ffsdfsdf",
+      "age": 33,
+      "email": "swetapatel11114@gmail.comdfdsfsdf",
+      "technology": "java",
+      "address": "valsad",
+      "id": 4
+    },
+    {
+      "name": "ffsdfsdf",
+      "age": 33,
+      "email": "swetapatel11114@gmail.comdfdsfsdf",
+      "technology": "java",
+      "address": "valsad",
+      "id": 5
+    },
+    {
+      "name": "harsh",
+      "age": 22,
+      "email": "swetapatel11114@gmail.comdfdsfsdf",
+      "technology": "java",
+      "address": "valsad",
+      "id": 6
+    },
+    {
+      "name": "harsh",
+      "age": 22,
+      "email": "swetapatel11114@gmail.comdfdsfsdf",
+      "technology": "java",
+      "address": "valsad",
+      "id": 7
+    }
+  ]
+}

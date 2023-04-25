@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "customer": [
+    {
+      "name": "fdufhdfkhdfkhfd",
+      "age": 55,
+      "email": "swetapatel11114@gmail.com",
+      "address": "fdgdfgdfg",
+      "id": 1
+    },
+    {
+      "name": "namrata",
+      "age": 22,
+      "email": "swetapatel11114@gmail.com",
+      "address": "fdgdfgdfg",
+      "id": 2
+    },
+    {
+      "name": "sweeeetaaaapppppppppppp",
+      "age": 33,
+      "email": "swetapatel11114@gmail.comdfdsfsdf",
+      "address": "valsad",
+      "id": 3
+    }
+  ]
+}

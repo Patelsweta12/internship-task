@@ -1,0 +1,21 @@
+<form [formGroup]="reactiveForm" (ngSubmit)="onDataChange?onSubmit():onCustomerUpdate()">
+    <div class="mb-3">
+        <label for="name" class="form-label"> Name</label>
+        <input type="text" class="form-control" id="name"  formControlName="name">
+
+    </div>
+    <div class="mb-3">
+        <label for="age" class="form-label">Age</label>
+        <input type="number" class="form-control" id="age" formControlName="age">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="address" formControlName="address">
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="reactiveForm.invalid">{{btnNameChange}}</button>
+</form>

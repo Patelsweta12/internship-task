@@ -1,0 +1,65 @@
+body{
+    background-color: #000000;
+}
+
+
+.text-color1{
+font-style: bold;
+}
+
+.card2-color{
+    background-color: #f19d80;;
+}
+.link{
+    color: #000000;
+}
+
+
+.text-color-green{
+    color: #60706d;
+}
+.text-color-gray{
+color: #9d9d9d;;
+}
+.card6-color{
+    background-color: #486f66;;
+}
+.card6-text-color{
+    color: white;
+}
+.border-bottom{
+    border-bottom: 1px solid #688a83;
+}
+.card6-text-color-light-green{
+    color: #81a89f;;
+}
+.purchase-btn-color{
+    background-color: #f5cfcf;
+    border-radius: 50px;
+    color: black;
+    padding: 10px;
+    border: none;
+
+}
+.share-btn-style{
+    background-color: #32574f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+.card6-footer{
+    background-color:  #284a43;;
+}
+.revoke-btn-style{
+    border: 1px solid red;
+    border-radius: 50px;
+    color: red;
+    
+    font-size: 12px; 
+    height: 30px;
+    padding: 5px;
+}
+.card{
+    border-radius: 0;
+}

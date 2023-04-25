@@ -1,0 +1,62 @@
+<!-- <table>
+  <tr>
+    <div>
+      <span></span>
+      <div></div>
+    </div>
+    <div>
+      <span></span>
+      <div></div>
+    </div>
+    <div>
+      <span></span>
+      <div></div>
+    </div>
+  </tr>
+</table> -->
+<nav class="navbar " style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Observables</span>
+  </div>
+</nav>
+<br>
+<div class="d-flex">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Map- {{studentArray | json}}</h5>
+      
+      <ul id="map"></ul>
+
+    </div>
+
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">MergeMap- {{studentArray | json}}</h5>
+      
+      <ul id="mergemap"></ul>
+
+    </div>
+
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Merge All- {{studentArray | json}}</h5>
+    
+      <ul id="mergeAll"></ul>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>

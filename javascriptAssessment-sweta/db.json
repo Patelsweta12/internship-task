@@ -1,0 +1,111 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "table": [
+    {
+      "name": "sweeeetaaaahihihiiiiiiiiiii",
+      "description": "fsdf434",
+      "selectStatus": "success",
+      "rate": "4234234",
+      "balance": "4234324",
+      "deposite": "3423423",
+      "id": 2
+    },
+    {
+      "name": "hiwiwh",
+      "description": "fsdf434",
+      "selectStatus": "success",
+      "rate": "4234234",
+      "balance": "4234324",
+      "deposite": "3423423",
+      "id": 3
+    },
+    {
+      "name": "harsh21212",
+      "description": "fsdfsdf",
+      "selectStatus": "error",
+      "rate": "345435",
+      "balance": "35345345",
+      "deposite": "3534534",
+      "id": 4
+    },
+    {
+      "name": "harsh21212",
+      "description": "fsdfsdf",
+      "selectStatus": "error",
+      "rate": "345435",
+      "balance": "35345345",
+      "deposite": "3534534",
+      "id": 5
+    },
+    {
+      "name": "harsh21212",
+      "description": "fsdfsdf",
+      "selectStatus": "error",
+      "rate": "345435",
+      "balance": "35345345",
+      "deposite": "3534534",
+      "id": 6
+    },
+    {
+      "name": "harsh21212",
+      "description": "fsdfsdf",
+      "selectStatus": "success",
+      "rate": "345435",
+      "balance": "35345345",
+      "deposite": "3534534",
+      "id": 7
+    },
+    {
+      "name": "harsh21212",
+      "description": "fsdfsdf",
+      "selectStatus": "success",
+      "rate": "345435",
+      "balance": "35345345",
+      "deposite": "3534534",
+      "id": 8
+    },
+    {
+      "name": "harsh21212",
+      "description": "fsdfsdf",
+      "selectStatus": "success",
+      "rate": "345435",
+      "balance": "35345345",
+      "deposite": "3534534",
+      "id": 9
+    },
+    {
+      "name": "harsh21212",
+      "description": "fsdfsdf",
+      "selectStatus": "success",
+      "rate": "345435",
+      "balance": "35345345",
+      "deposite": "3534534",
+      "id": 11
+    },
+    {
+      "name": "harsh21212",
+      "description": "fsdfsdf",
+      "selectStatus": "success",
+      "rate": "345435",
+      "balance": "35345345",
+      "deposite": "3534534",
+      "id": 12
+    }
+  ]
+}

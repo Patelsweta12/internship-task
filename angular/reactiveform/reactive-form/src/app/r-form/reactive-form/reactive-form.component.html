@@ -1,0 +1,92 @@
+<div class="form">
+    <h2>Add Customer</h2>
+    <div class="form-wrapper"></div>
+    <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" >
+        <div formGroupName="personalDetails">
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" formControlName="firstname">
+                <div>
+                    <span class="error-msg"
+                        *ngIf="!reactiveForm.get('personalDetails.firstname').valid && reactiveForm.get('personalDetails.firstname').touched">First
+                        name is required
+                    </span>
+                </div>
+            </div>
+            <div><br><br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" formControlName="lastname">
+                <div>
+                    <span class="error-msg"
+                        *ngIf="!reactiveForm.get('personalDetails.lastname').valid && reactiveForm.get('personalDetails.lastname').touched">First
+                        name is required
+                    </span>
+                </div>
+            </div>
+        </div><br><br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" formControlName="email" placeholder="Enter email...">
+            <!-- pattern=" /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(\.[com,in]{2,3})*$/" -->
+            <div>
+                <span class="error-msg"
+                    *ngIf="!reactiveForm.get('email').valid && reactiveForm.get('email').touched">The Email is
+                    required</span>
+            </div>
+           
+        </div><br><br>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" formControlName="password" laceholder="Enter password...">
+            <div>
+                <span class="error-msg"
+                    *ngIf="!reactiveForm.get('password').valid && reactiveForm.get('password').touched">Enter the valid
+                    password
+                </span>
+            </div>
+        </div><br><br>
+
+
+        <!-- form array starts  /// instead of ng container we can also use div  -->
+
+        <div formArrayName="address">
+            <ng-container *ngFor="let skill of reactiveForm.get('address')['controls']; index as i">
+                <label for="country">country</label>
+                <select name="address-country" id="address-country" formControlName="{{i}}">
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Germany">Germany</option>
+
+                </select><br>
+                <br><br>
+                <label for="state">State</label>
+                <select name="address-state" id="address-state" formControlName="{{i}}">
+                    <option value="Gujarat">India</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                </select><br><br><br>
+                <label for="city">City</label>
+                <select name="address-city" id="address-city" formControlName="{{i}}">
+                    <option value="Valsad">Valsad</option>
+                    <option value="Vapi">Vapi</option>
+                    <option value="Surat">Surat</option>
+                </select><br><br><br>
+
+            </ng-container>
+            
+            <button (click)="addAddress()"  [disabled]=" disablelimit()">+ Add address</button>
+            
+            
+
+        </div>
+
+
+        <button type="submit" value="submit" id="submit" [disabled]="reactiveForm.invalid">Submit</button>
+        <!-- <button type="submit" value="submit" id="submit" (click)="onSubmit()" >Submit</button> -->
+
+
+    </form>
+</div>

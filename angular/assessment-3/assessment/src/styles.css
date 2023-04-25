@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* 
+@import "~@ng-select/ng-select/themes/default.theme.css"; */
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden; 
+}
+
+app-customer{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}

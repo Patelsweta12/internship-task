@@ -1,0 +1,26 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "empName": "Sweta",
+      "empAge": 22,
+      "empTechnology": "frontend",
+      "empEmail": "swetap@gmail.com"
+    },
+    {
+      "id": 2,
+      "empName": "harsh",
+      "empAge": 22,
+      "empTechnology": "frontend",
+      "empEmail": "swetap@gmail.com"
+    },
+    {
+      "id": 3,
+      "empName": "alay",
+      "empAge": 22,
+      "empTechnology": "frontend",
+      "empEmail": "swetap@gmail.com"
+    }
+
+  ]
+}

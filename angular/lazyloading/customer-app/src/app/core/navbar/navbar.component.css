@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .style{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+} */
+.header-style{
+background-color:rgba(83, 83, 212, 0.767);
+padding: 25px;
+}
+.navbar-style{
+  display: flex;
+    justify-content: end;
+}
+.anchor{
+  color: white;
+  text-decoration: none;
+}
+.a-space{
+  margin-right: 100px;
+}

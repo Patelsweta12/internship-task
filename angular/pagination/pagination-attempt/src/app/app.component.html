@@ -1,0 +1,43 @@
+<div>
+  <select (change)="onTableSizeChange($event)">
+    <option *ngFor="let size of tableSizes">
+      {{size}}
+    </option>
+  </select>
+</div>
+
+
+<table class="table table-dark table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Technology</th>
+      <th>Address</th>
+      <th>Action</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of POSTS | paginate:{
+      itemsPerPage:tableSize,
+      currentPage:page,
+      totalItems:count} let i = index" class="table-secondary">
+      <!-- <tr *ngFor="let data of studentList " class="table-secondary"> -->
+      <td>{{data.id}}</td>
+      <td>{{data.name}}</td>
+      <td>{{data.age}}</td>
+      <td>{{data.gender}}</td>
+      <td>{{data.technology}}</td>
+      <td>{{data.address}}</td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)">
+  </pagination-controls>
+</div>
+
+<router-outlet></router-outlet>

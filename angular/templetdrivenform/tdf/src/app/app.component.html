@@ -1,0 +1,64 @@
+<h1 class="h-center">Templet driven form</h1>
+<div class="form-wrapper">
+  <form #userForm="ngForm" class="form-style">
+
+    <!-- {{userForm.value | json}} -->
+
+
+    <br><br>
+
+    <!-- {{userModel | json}} -->
+    <br><br>
+    <div>
+      <label class="form-field-space">Name</label>
+      <input type="text" name="name" #name="ngModel" [class.is-invalid]="name.invalid && name.touched"
+        class="input-border" [(ngModel)]="userModel.name" required>
+      <div [class.d-none]="name.valid || name.untouched" class="error-color">Name is required</div>
+      <!-- <div *ngIf="name.errors && (name.invalid || name.touched)">
+        <div class="error-color " *ngIf="name.errors?.['required']">Name is required</div>
+        <div class="error-color" *ngIf="name.errors?.['pattern']">should be in alpha numeric and no special character
+          should be present</div>
+      </div> -->
+    </div><br><br><br>
+    <div>
+      <label class="form-field-space">Email</label>
+      <input type="email" name="email" #email="ngModel" [class.is-invalid]="email.invalid && email.touched"
+        class="input-border" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" [(ngModel)]="userModel.email" required>
+      <div [class.d-none]="email.valid || email.untouched" class="error-color">Email is required and must be in proper
+        format</div>
+    </div><br><br>
+    <div>
+      <label class="form-field-space">phone</label>
+      <input type="tel" name="phone" #phone="ngModel" pattern="^((\\+91-?)|0)?[0-9]{10}$" pattern2="/^\d+/"
+        [class.is-invalid]="phone.invalid && phone.touched" class="input-border" [(ngModel)]="userModel.phone" required>
+      <!-- <div [class.d-none]="phone.valid || phone.untouched" class="error-color">It is required and must be of 10 digits
+      </div> -->
+      <div *ngIf="phone.errors && (phone.invalid || phone.touched)">
+        <div class="error-color " *ngIf="phone.errors?.['required']">Phone is required</div>
+        <div class="error-color" *ngIf="phone.errors?.['pattern']">should be of 10 digits</div>
+        <!-- <div class="error-color" *ngIf="phone.errors?.['pattern2']">must be only digits</div> -->
+      </div>
+    </div><br><br>
+    <div>
+      <select (blur)="validateTopic(topic.value)" (change)="validateTopic(topic.value)" name="topic"
+        [(ngModel)]="userModel.topic" #topic="ngModel" [class.is-invalid]="topicHasError && topic.touched">
+        <option value="default">I choose </option>
+        <option *ngFor=" let topic of topics">{{topic}}</option>
+      </select>
+      <div [class.d-none]="!topicHasError || topic.untouched" class="error-color">Choose the topic</div>
+    </div><br><br>
+    <div>
+      <label class="form-field-space">send me </label>
+      <input type="checkbox" name="subscribe" class="input-border" [(ngModel)]="userModel.subscribe">
+    </div><br><br>
+    <button  class="btn btn-primary" type="submit" [disabled]="userForm.invalid" >submit form</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
