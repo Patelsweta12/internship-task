@@ -1,0 +1,131 @@
+section {
+    width: 100%;
+  }
+  .main-border {
+    border: 1px solid $border-color;
+    border-radius: 6px;
+  }
+  ul {
+    list-style-type: none;
+    .color-list-item {
+      font-family: $font-family-base;
+      font-weight: $font-weight-semibold; //600
+      font-size: $font-size-base; //16px
+      color: $text-muted;
+      height: 30px;
+    }
+    .title-list {
+      margin-bottom: 26px;
+    }
+  }
+  .floor-title {
+    font-family: $font-family-base;
+    font-weight: $font-weight-bold; //700
+    font-size: $font-size-subtitle;
+    color: $text-primary;
+  }
+  .seat-color {
+    height: 18px;
+    width: 18px;
+    border-radius: 2px;
+  }
+  .reserved-color {
+    background-color: $reserved-seat-color;
+  }
+  .available-color {
+    background-color: $available-seat-color;
+  }
+  .booked-color {
+    background-color: $primary;
+  }
+  .unavailable-color {
+    background-color: $dark-yellow;
+  }
+  .unassigned-color {
+    background-color: $text-muted;
+  }
+  .main-wrapper {
+    border: 1px solid $border-muted;
+    border-radius: 6px;
+  }
+  .employee-seat-table-thead{
+    position: sticky;
+    // background-color: $white;
+    // background-color: $bg-grey;
+    top: 0;
+  }
+  
+  
+  .seat-table {
+    tr {
+      border-bottom: 1px solid $border-color;
+      th{
+        font-size: $table-font-size;
+        font-weight:$font-weight-bold;
+        color:$text-primary;
+      }
+      td {
+        padding: 15px 30px;
+        &:first-child {
+          border-right: 1px solid $border-color;
+        }
+      }
+    }
+  }
+  .sr-no-table{
+    
+      td{
+        font-size: $table-font-size;
+        font-weight:$font-weight-bold;
+        color:$text-primary;
+      }
+  }
+  .add-btn{
+    width: 40px;
+    height: 40px;
+  }
+  // .table-container{
+  //   gap: 118px;
+  // }
+
+  @media (min-width: 768px) and (max-width: 991.99px) {
+    .seat-container {
+        width: 100%;
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+    .seat-container {
+        width: 100%;
+        max-width: 920px;
+    }
+    
+}
+
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+    .seat-container {
+        width: 100%;
+        max-width: 1080px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1599.99px) {
+    .seat-container {
+        width: 100%;
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1600px) and (max-width: 1799.99px) {
+    .seat-container {
+        width: 100%;
+        max-width: 1440px;
+    }
+}
+@media (min-width: 1800px) {
+    .seat-container {
+        width: 100%;
+        max-width: 1700px;
+    }
+}
+  

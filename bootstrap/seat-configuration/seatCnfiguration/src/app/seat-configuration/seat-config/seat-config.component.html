@@ -1,0 +1,799 @@
+<!-- starts:book-seat  content -->
+<div class="container-fluid d-flex flex-column seat-container h-100">
+    <!-- selector of bookseat-header -->
+    <app-seat-config-header></app-seat-config-header>
+    <div class="main-wrapper p-3 d-flex flex-column">
+      <!-- starts: book-seat-header -->
+      <div class="d-flex g-0 flex-column flex-md-row">
+        <div class="p-0">
+          <h3 class="floor-title">1st Floor</h3>
+        </div>
+        <!-- starts: list of colors representing the seats -->
+        <ul
+          class="d-flex justify-content-start justify-content-md-end flex-md-row title-list flex-wrap flex-grow-1"
+        >
+          <li>
+            <div class="d-flex align-items-center me-2">
+              <span class="reserved-color seat-color"></span>
+              <span class="color-list-item ms-1 d-flex align-items-center"
+                >Reserved</span
+              >
+            </div>
+          </li>
+          <li class="d-flex align-items-center me-2">
+            <div class="d-flex align-items-center mx-3">
+              <span class="available-color seat-color"></span>
+              <span class="color-list-item mx-1 d-flex align-items-center"
+                >Available</span
+              >
+            </div>
+          </li>
+          <li>
+            <div class="d-flex align-items-center me-2">
+              <span class="booked-color seat-color"></span>
+              <span class="color-list-item mx-1 d-flex align-items-center"
+                >Booked</span
+              >
+            </div>
+          </li>
+          <li class="d-flex align-items-center me-2">
+            <div class="d-flex align-items-center mx-3">
+              <span class="unavailable-color seat-color"></span>
+              <span class="color-list-item mx-1 d-flex align-items-center"
+                >Unavailable</span
+              >
+            </div>
+          </li>
+          <li class="d-flex align-items-center me-2">
+            <div class="d-flex align-items-center me-2">
+              <span class="unassigned-color seat-color"></span>
+              <span class="color-list-item mx-1 d-flex align-items-center"
+                >Unassigned</span
+              >
+            </div>
+          </li>
+        </ul>
+        <!-- ends: list of colors representing the seats -->
+      </div>
+      <!-- ends: book-seat-header -->
+      <section class="d-flex overflow-auto h-100 w-100">
+        <!-- starts: list of seats -->
+        <div class="d-flex w-100">
+          <div class="d-flex">
+            <!-- starts: sr no. table -->
+            <table class="table table-borderless sr-no-table">
+              <thead>
+                <tr>
+                  <th class="employee-seat-table-thead">
+                    <span class="invisible">sr no.</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> <span class="invisible">sr no.</span></tr>
+                <tr *ngFor="let srNo of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+                  <td>{{ srNo }}</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- ends: sr no. table -->
+          </div>
+          <div class="d-flex w-100 justify-content-between">
+            <table class="seat-table table position-relative">
+              <thead class="text-center">
+                <tr class="border-bottom employee-seat-table-thead">
+                  <th>A</th>
+                  <th>B</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <button class="border-0 add-btn">
+                      <img src="./assets/images/add-btn-icon.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0 add-btn">
+                      <img src="./assets/images/add-btn-icon.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="seat-table table position-relative">
+              <thead class="text-center">
+                <tr class="border-bottom employee-seat-table-thead">
+                  <th>C</th>
+                  <th>D</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <button class="border-0 add-btn">
+                      <img src="./assets/images/add-btn-icon.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0 add-btn">
+                      <img src="./assets/images/add-btn-icon.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="seat-table table position-relative">
+              <thead class="text-center">
+                <tr class="border-bottom employee-seat-table-thead">
+                  <th>E</th>
+                  <th>F</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <button class="border-0 add-btn">
+                      <img src="./assets/images/add-btn-icon.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0 add-btn">
+                      <img src="./assets/images/add-btn-icon.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="seat-table table position-relative">
+              <thead class="text-center">
+                <tr class="border-bottom employee-seat-table-thead">
+                  <th>G</th>
+                  <th>H</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <button class="border-0 add-btn">
+                      <img src="./assets/images/add-btn-icon.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0 add-btn">
+                      <img src="./assets/images/add-btn-icon.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="seat-table table position-relative">
+              <thead class="text-center">
+                <tr class="border-bottom employee-seat-table-thead">
+                  <th>I</th>
+                  <th>J</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <button class="border-0 add-btn">
+                      <img src="./assets/images/add-btn-icon.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0 add-btn">
+                      <img src="./assets/images/add-btn-icon.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                  <td>
+                    <button class="border-0">
+                      <img src="./assets/images/seat.png" alt="" />
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- ends: list of seats -->
+      </section>
+    </div>
+  </div>
+  <!-- ends:book-seat main content -->
+  
