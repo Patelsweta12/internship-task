@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+/* variables */
+:root{
+--background-color:#E5E7EA;
+--primary-color:#FFFFFF;
+
+}
+ /* helper class */
+ .d-flex{
+    display: flex;
+ }
+ .flex-column{
+    flex-direction: column;
+ }
+ .justify-content-center{
+    justify-content: center;
+ }
+ .align-itm-center{
+    align-items: center;
+ }
+ /* design starts */
+ body{
+    background-color: var(--background-color);
+
+ }
+
+ /* custom classes */
+ .form-wrapper{
+    background-color: var(--primary-color);
+   
+    margin-top: 30px;
+   padding: 10px;
+   border-radius: 2px;
+    
+ }
+ .wrapper{
+    height: 100%;
+ }
+ .child{
+    border: 1px solid red;
+ }
