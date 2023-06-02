@@ -1,50 +1,67 @@
-*{
-    margin: 0;
-    padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 /* variables */
-:root{
---background-color:#E5E7EA;
---primary-color:#FFFFFF;
-
+:root {
+  --background-color: #e5e7ea;
+  --primary-color: #ffffff;
 }
- /* helper class */
- .d-flex{
-    display: flex;
- }
- .flex-column{
-    flex-direction: column;
- }
- .justify-content-center{
-    justify-content: center;
- }
- .align-itm-center{
-    align-items: center;
- }
- /* design starts */
- body{
-    background-color: var(--background-color);
+/* helper class */
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-itm-center {
+  align-items: center;
+}
+/* design starts */
+body {
+  background-color: var(--background-color);
+}
 
- }
-
- /* custom classes */
- .form-wrapper{
-    background-color: var(--primary-color);
-   
-    margin-top: 30px;
-   padding: 10px;
-   border-radius: 2px;
-    
- }
- .wrapper{
-    height: 100%;
- }
- .child{
-    border: 1px solid red;
- }
+/* custom classes */
+.form-wrapper {
+  background-color: var(--primary-color);
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 2px;
+}
+.wrapper {
+  height: 100%;
+}
+.input-style {
+  padding: 10px 0px;
+}
+.input-class {
+  padding: 5px;
+}
+.label-style {
+  padding-bottom: 10px;
+}
+.custom-div {
+  padding-right: 34px;
+}
+.bg-color {
+  background-color: rgb(197, 203, 207);
+}
+.currency-input1 {
+  /* background-color: var(--primary-color); */
+  padding: 10px;
+}
+.currency-input2 {
+  /* background-color: var(--primary-color); */
+  padding: 10px;
+}

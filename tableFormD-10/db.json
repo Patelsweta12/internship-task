@@ -17,6 +17,59 @@
     "name": "typicode"
   },
   "form": [
-    
+    {
+      "fname": "harsh",
+      "lname": "Patel",
+      "tech": "frontend",
+      "id": 1
+    },
+    {
+      "fname": "namrata",
+      "lname": "Patel",
+      "tech": "QA",
+      "id": 2
+    },
+    {
+      "fname": "Alay",
+      "lname": "Patel",
+      "tech": "DevOps",
+      "id": 3
+    },
+    {
+      "fname": "tejas",
+      "lname": "Patel",
+      "tech": "Java",
+      "id": 4
+    },
+    {
+      "fname": "anshu",
+      "lname": "Patel",
+      "tech": "frontend",
+      "id": 5
+    },
+    {
+      "fname": "sweta",
+      "lname": "Patel",
+      "tech": "frontend",
+      "id": 6
+    },
+    {
+      "fname": "sweta",
+      "lname": "Patel",
+      "tech": "frontend",
+      "id": 7
+    },
+    {
+      "fname": "sweta",
+      "lname": "Patel",
+      "tech": "frontend",
+      "id": 8
+    },
+    {
+      "fname": "sweta",
+      "lname": "Patel",
+      "tech": "frontend",
+      "id": 9
+    }
   ]
 }
