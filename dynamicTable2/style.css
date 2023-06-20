@@ -1,0 +1,23 @@
+.table-wrapper{
+    width: 100%;
+    border-collapse: collapse;
+    border:1px solid red;
+
+}
+th,td{
+    border:1px solid red;
+text-align: center;
+padding: 8px;
+}
+.deleteBtn{
+    background-color: rgb(192, 193, 255);
+    border: 2px solid green;
+    color: white;
+    padding: 5px;
+}
+.editBtn{
+    background-color: rgb(249, 255, 192);
+    border: 2px solid green;
+    /* color: white; */
+    padding: 5px;
+}
