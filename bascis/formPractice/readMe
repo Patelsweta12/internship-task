@@ -1,0 +1,43 @@
+// function onSubmit() {
+// let name = document.getElementById("name");
+// console.log(name);
+// }
+//github.com/Virenp56/Assessment-2
+// let formData = document.getElementById("myForm");
+let submitBtn = document.getElementById("submitBtn");
+let name = document.getElementById("name");
+let phoneNumber = document.getElementById("phNo");
+let phoneError = document.getElementById("phoneError");
+let selectLanguage = document.getElementById("languages");
+let languageError = document.getElementById("languageError");
+// let languages = document.getElementById("languages");
+submitBtn.disabled = true;
+
+submitBtn.addEventListener("click", (e) => {
+console.log(formData.value);
+e.preventDefault();
+console.log({ name: name.value, phoneNumber: phoneNumber.value });
+});
+function phoneValidation() {
+if (phoneNumber.value == "") {
+console.log("error");
+phoneError.innerHTML = "required";
+submitBtn.disabled = true;
+} else if (phoneNumber.value.length > 10) {
+phoneError.innerHTML = "enter valid num";
+} else {
+phoneError.innerHTML = " ";
+submitBtn.disabled = false;
+}
+}
+function onChangeLanguage() {
+console.log(selectLanguage.value);
+
+if (selectLanguage.value == "") {
+languageError.innerHTML = "required";
+} else {
+languageError.innerHTML = " ";
+submitBtn.disabled = false;
+}
+}
+// languages.addEventListener();

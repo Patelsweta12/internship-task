@@ -9,12 +9,14 @@ body {
   width: 100%;
   overflow: hidden;
 }
+
 /* variables */
 :root {
   --background-color: #e5e7ea;
-  --primary-color: #ffffff;
+  --form-color: #ffffff;
 }
-/* helper class */
+
+/* helper classes */
 .d-flex {
   display: flex;
 }
@@ -24,47 +26,49 @@ body {
 .justify-content-center {
   justify-content: center;
 }
-.align-itm-center {
-  align-items: center;
-}
 .justify-content-between {
   justify-content: space-between;
 }
+.align-item-center {
+  align-items: center;
+}
+.required {
+  color: red;
+}
+.inputs-style {
+  padding: 5px;
+}
+.labels-style {
+  padding-bottom: 10px;
+}
+.field-wrapper {
+  padding: 10px 0px;
+}
+
 /* design starts */
 body {
   background-color: var(--background-color);
 }
-
-/* custom classes */
+.main-wrapper {
+  height: 100%;
+}
 .form-wrapper {
-  background-color: var(--primary-color);
+  background-color: var(--form-color);
   margin-top: 30px;
   padding: 10px;
   border-radius: 2px;
 }
-.wrapper {
-  height: 100%;
-}
-.input-style {
-  padding: 10px 0px;
-}
-.input-class {
+
+.cancel-btn {
   padding: 5px;
+  margin-right: 15px;
 }
-.label-style {
-  padding-bottom: 10px;
+.sign-up-btn {
+  padding: 5px;
+  flex-grow: 1;
+  border: none;
+  background-color: rgb(197, 186, 186);
 }
-.custom-div {
-  padding-right: 34px;
-}
-.bg-color {
-  background-color: rgb(197, 203, 207);
-}
-.currency-input1 {
-  /* background-color: var(--primary-color); */
-  padding: 10px;
-}
-.currency-input2 {
-  /* background-color: var(--primary-color); */
-  padding: 10px;
+.dob {
+  margin-right: 15px;
 }

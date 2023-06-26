@@ -39,7 +39,7 @@ $colors: (
   "black": $black,
   "gray": $gray,
   "white": $white,
-  "aqua": $aqua,
+  "aqua-sweta": $aqua,
   "light-gray": $light-gray,
   "yellow": $yellow,
   "red": $red,
@@ -47,8 +47,7 @@ $colors: (
 );
 
 // loop for map
-@each $key,
-$value in $colors {
+@each $key, $value in $colors {
   .#{$key} {
     color: $value;
   }
@@ -60,25 +59,23 @@ $value in $colors {
 }
 // nesting from aside-wrapper classess
 .aside-wrapper {
-     width: 200px;
-      height: 100%;
-      background-color: $gray;
-       padding: 20px;
-       .aside-header {
-         display: flex;
-         .header-space {
-           margin-left: 10px;
-           
-           }
-         }
-         .sidebar-list {
-             margin-top: 30px;
-             .list-item {
-                padding: 15px 25px;
-               }
-           }
-
-     }
+  width: 200px;
+  height: 100%;
+  background-color: $gray;
+  padding: 20px;
+  .aside-header {
+    display: flex;
+    .header-space {
+      margin-left: 10px;
+    }
+  }
+  .sidebar-list {
+    margin-top: 30px;
+    .list-item {
+      padding: 15px 25px;
+    }
+  }
+}
 
 .list-item:hover {
   background-color: black;
@@ -90,20 +87,19 @@ $value in $colors {
 .d-flex {
   display: flex;
 }
-.overflow-hidden{
+.overflow-hidden {
   overflow: hidden;
 }
-.overflow-auto{
+.overflow-auto {
   overflow: auto;
 }
-.flex-dir{
+.flex-dir {
   flex-direction: column;
 }
 
 // main content starts
 .content-wrapper {
   flex-grow: 1;
-  
 }
 
 // header starts
@@ -146,7 +142,7 @@ $value in $colors {
 .align-card-text {
   text-align: center;
   // margin-bottom: 10px;
-  @include margin(0, 0, 10px, 0)
+  @include margin(0, 0, 10px, 0);
 }
 // card-list nesting starts
 // card list classess starts
@@ -165,7 +161,6 @@ $value in $colors {
       }
     }
   }
-
 }
 // card list classess ends
 .social-media-icon {
