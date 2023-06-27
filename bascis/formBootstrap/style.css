@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+/* variables */
+:root{
+    --background-color: #e5e7ea;
+    --form-color:#ffffff;
+    ;
+}
+/* helper classes */
+/* design starts */
+body{
+    background-color:var(--background-color);
+}
+
+.form-wrapper{
+    background-color: var(--form-color);
+}
