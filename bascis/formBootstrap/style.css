@@ -10,16 +10,23 @@ html body{
 }
 /* variables */
 :root{
-    --background-color: #e5e7ea;
-    --form-color:#ffffff;
-    ;
+--background-color: rgb(181, 177, 177);
+--form-color:white;
+
 }
-/* helper classes */
 /* design starts */
 body{
-    background-color:var(--background-color);
+    background-color: var(--background-color);
 }
-
 .form-wrapper{
     background-color: var(--form-color);
+    border-radius: 5px;
+
+}
+.signup-btn{
+    background-color: rgb(158, 145, 145);
+    border-radius: 2px;
+}
+.required{
+    color: red;
 }
