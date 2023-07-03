@@ -1,6 +1,7 @@
 let saveButton = document.getElementById("submit");
 saveButton.addEventListener("click", (e) => {
   e.preventDefault();
+
   // for name
   let userName = document.getElementById("name").value;
   console.log(userName);

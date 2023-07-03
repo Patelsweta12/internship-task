@@ -10,7 +10,18 @@ html body{
 }
 body{
     background-color: pink;
+    /* font-family:  'Inter', sans-serif;; */
 }
 .form-wrapper{
     background-color: white;
+}
+.currency{
+    background-color: rgb(128, 122, 122);
+}
+.cad{
+    background-color: white;
+}
+.usd{
+    background-color: rgb(128, 122, 122);
+
 }
